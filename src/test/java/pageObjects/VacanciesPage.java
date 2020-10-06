@@ -35,7 +35,7 @@ public class VacanciesPage {
     public void checkParagraphAndCountOfItemsInIt(){
         Assert.assertTrue("Paragraph 'Professional skills and qualification:' is not visible",
                 baseFunc.isPresentElement(PARAGRAPH_SKILLS_AND_QUALIFICATION));
-        Assert.assertEquals("Error, paragraph 'Professional skills and qualification:' contains not 5 items", 6,
+        Assert.assertEquals("Error, paragraph 'Professional skills and qualification:' contains not 5 items", 5,
                 baseFunc.getChildElementsCount(PARAGRAPH_SKILLS_AND_QUALIFICATION, SKILLS_AND_QUALIFICATION_ITEM));
     }
 }
